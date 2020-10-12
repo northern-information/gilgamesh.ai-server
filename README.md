@@ -1,1 +1,3 @@
 # gilgamesh.ai-server
+
+server
