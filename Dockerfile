@@ -27,4 +27,4 @@ WORKDIR /home/gilgamesh
 
 COPY src ./
 
-CMD [ "flask", "run" ]
+# CMD [ "flask", "run" ]
