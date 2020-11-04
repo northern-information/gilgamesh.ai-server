@@ -29,4 +29,4 @@ WORKDIR /home/gilgamesh
 
 COPY src ./
 
-CMD [ "bash", "server.sh" ]
+#CMD [ "bash", "server.sh" ]
