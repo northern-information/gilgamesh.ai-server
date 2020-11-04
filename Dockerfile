@@ -2,8 +2,8 @@ FROM ubuntu:bionic
 
 RUN apt update
 
-RUN apt install python3-pip python3-testresources sudo vim \
-	curl build-essential fluid-soundfont-gm libasound2-dev \
+RUN apt install python3-pip python3-testresources sudo \
+	build-essential fluid-soundfont-gm libasound2-dev \
 	libfluidsynth1 libjack-dev locales locales-all \
 	portaudio19-dev -y
 
@@ -23,8 +23,14 @@ ENV LANG=en_US.utf-8
 
 EXPOSE 5000
 
+EXPOSE 80
+
 WORKDIR /home/gilgamesh
 
 COPY src ./
 
+<<<<<<< HEAD
+CMD [ "bash", "server.sh" ]
+=======
 # CMD [ "flask", "run" ]
+>>>>>>> 6cfc60a2b5d90f56762b1eb0bc238e1e3ce12e99
