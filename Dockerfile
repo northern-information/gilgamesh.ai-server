@@ -29,8 +29,4 @@ WORKDIR /home/gilgamesh
 
 COPY src ./
 
-<<<<<<< HEAD
 CMD [ "bash", "server.sh" ]
-=======
-# CMD [ "flask", "run" ]
->>>>>>> 6cfc60a2b5d90f56762b1eb0bc238e1e3ce12e99
