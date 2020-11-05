@@ -23,7 +23,7 @@ ENV LANG=en_US.utf-8
 
 EXPOSE 5000
 
-EXPOSE 80
+EXPOSE 8080
 
 WORKDIR /home/gilgamesh
 
