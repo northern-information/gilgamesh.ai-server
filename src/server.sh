@@ -1,5 +1,13 @@
 #!/bin/bash
 
-nohup python3 -m flask run --no-reload --no-debugger --host=0.0.0.0 &
+export FLASK_APP=play.py
 
-nohup python3 -m http.server 8080 --directory /home/gilgamesh/banner &
+export LC_ALL=en_US.utf-8
+
+export LANG=en_US.utf-8
+
+nohup python3 -m flask run --no-reload --no-debugger --host=0.0.0.0 > flask.log 2>&1 &
+
+cd banner
+
+nohup python3 -m http.server 8080 > ../http.log 2>&1 &
