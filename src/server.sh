@@ -10,4 +10,4 @@ nohup python3 -m flask run --no-reload --no-debugger --host=0.0.0.0 > flask.log 
 
 cd banner
 
-nohup python3 -m http.server 8080 > ../http.log 2>&1 &
+python3 -m http.server 8080 > ../http.log
