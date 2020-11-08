@@ -6,6 +6,8 @@ export LC_ALL=en_US.utf-8
 
 export LANG=en_US.utf-8
 
+export NUMBA_CACHE_DIR=/tmp
+
 nohup python3 -m flask run --no-reload --no-debugger --host=0.0.0.0 > flask.log 2>&1 &
 
 cd banner
