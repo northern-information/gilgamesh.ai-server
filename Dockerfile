@@ -13,6 +13,8 @@ RUN python3 -m pip install --use-feature=2020-resolver magenta Flask-RESTful pyf
 
 RUN useradd -s /bin/bash -m -G sudo gilgamesh
 
+RUN chown -R gilgamesh:gilgamesh /home/gilgamesh
+
 USER gilgamesh
 
 ENV FLASK_APP=play.py
