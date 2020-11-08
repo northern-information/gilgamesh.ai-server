@@ -2,7 +2,7 @@ FROM ubuntu:bionic
 
 RUN apt update
 
-RUN apt install python3-pip python3-testresources sudo \
+RUN apt install curl python3-pip python3-testresources sudo \
 	build-essential fluid-soundfont-gm libasound2-dev \
 	libfluidsynth1 libjack-dev locales locales-all \
 	portaudio19-dev -y
