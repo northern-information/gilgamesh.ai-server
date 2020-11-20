@@ -7,7 +7,7 @@ RUN apt update
 RUN apt install build-essential python3-dev python3-pip \
 	python3-testresources sudo fluid-soundfont-gm \
 	libasound2-dev libfluidsynth2 libjack-dev locales \
-	portaudio19-dev -y --no-install-recommends
+	locales-all portaudio19-dev -y --no-install-recommends
 
 RUN python3 -m pip install -U pip setuptools
 
