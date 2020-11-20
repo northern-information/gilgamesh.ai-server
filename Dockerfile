@@ -1,11 +1,13 @@
-FROM ubuntu:bionic
+FROM ubuntu:focal
+
+ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt update
 
-RUN apt install curl python3-pip python3-testresources sudo \
-	build-essential fluid-soundfont-gm libasound2-dev \
-	libfluidsynth1 libjack-dev locales locales-all \
-	portaudio19-dev -y
+RUN apt install build-essential python3-dev python3-pip \
+	python3-testresources sudo fluid-soundfont-gm \
+	libasound2-dev libfluidsynth2 libjack-dev locales \
+	portaudio19-dev -y --no-install-recommends
 
 RUN python3 -m pip install -U pip setuptools
 
